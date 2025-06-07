@@ -1,0 +1,189 @@
+<!DOCTYPE html><html><head>
+
+  <!-- 指定相對連結的基礎 URL，/ 是 Flutter 的基礎路徑占位符 -->
+  <base href="/">
+
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+
+  <meta name="description" content="Road Savior is a professional task-matching platform that quickly connects nearby drivers for moving, towing, transportation, and crane services, enabling efficient client-driver matching.">
+  <!-- 提供網站的簡潔描述，供搜尋引擎使用，包含關鍵字以優化 SEO -->
+
+  <meta name="keywords" content="Road Savior, moving services, towing services, transportation platform, crane tasks, driver matching, nearby orders">
+  <!-- 列出相關關鍵字以增強 SEO，雖然現代搜尋引擎對此標籤重視度較低 -->
+
+
+  <!-- Open Graph Meta 標籤，用於社群媒體分享 -->
+  <meta property="og:title" content="Road Savior - Professional Task-Matching Platform">
+  <!-- 設定社群媒體分享時顯示的標題（例如 Facebook、LinkedIn） -->
+  <meta property="og:description" content="Quickly connect with nearby drivers for moving, towing, transportation, and crane services. Efficient matching, saving time and effort!">
+  <!-- 定義社群媒體分享時顯示的描述 -->
+  <meta property="og:image" content="https://leotowtruck.github.io/favicon.png">
+  <!-- 指定社群媒體分享時顯示的圖片 -->
+  <meta property="og:url" content="https://leotowtruck.github.io">
+  <!-- 提供社群媒體分享的標準 URL -->
+  <meta property="og:type" content="website">
+  <!-- 指定 Open Graph 內容類型為網站 -->
+
+
+  <!-- Twitter Card Meta 標籤，用於 Twitter 分享 -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- 指定 Twitter 分享時使用大圖卡片格式 -->
+  <meta name="twitter:title" content="Road Savior - Professional Task-Matching Platform">
+  <!-- 設定 Twitter 分享時的標題 -->
+  <meta name="twitter:description" content="Quickly connect with nearby drivers for moving, towing, transportation, and crane services. Efficient matching, saving time and effort!">
+  <!-- 設定 Twitter 分享時的描述 -->
+  <meta name="twitter:image" content="https://leotowtruck.github.io/favicon.png">
+  <!-- 指定 Twitter 分享時的圖片 -->
+
+
+  <!-- iOS 相關 Meta 標籤與圖標 -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="landing">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+
+  <!-- 結構化資料（Structured Data），使用 JSON-LD 格式 -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Moving, Towing, Transportation, and Crane Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Road Savior",
+        "url": "https://leotowtruck.github.io",
+        "logo": "https://leotowtruck.github.io/favicon.png",
+        "telephone": "+886-925-137-363",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Taipei",
+          "addressRegion": "Taiwan",
+          "addressCountry": "TW"
+        }
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Taiwan"
+      },
+      "description": "Road Savior is a professional task-matching platform that quickly connects nearby drivers for moving, towing, transportation, and crane services in Taiwan.",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://leotowtruck.github.io/services",
+        "description": "Professional moving, towing, transportation, and crane services with efficient driver matching."
+      }
+    }
+  </script>
+  <!-- 使用 JSON-LD 格式提供結構化資料，幫助搜尋引擎理解網站內容 -->
+
+
+  <title>Road Savior - Professional Moving and Towing Services</title>
+  <!-- 設定網頁標題，包含關鍵字以優化 SEO -->
+
+  <link rel="manifest" href="manifest.json">
+  <!-- 連結到 Web 應用程式的 Manifest 文件，用於 PWA（漸進式網頁應用程式） -->
+
+  <!-- CSS 樣式：隱藏靜態內容，避免在啟動畫面顯示 -->
+  <style>
+    .seo-content {
+      display: none;
+    }
+  </style>
+
+
+
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <style id="splash-screen-style">
+    html {
+      height: 100%
+    }
+
+    body {
+      margin: 0;
+      min-height: 100%;
+      background-color: #FFFFFF;
+          background-size: 100% 100%;
+    }
+
+    .center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    .contain {
+      display:block;
+      width:100%; height:100%;
+      object-fit: contain;
+    }
+
+    .stretch {
+      display:block;
+      width:100%; height:100%;
+    }
+
+    .cover {
+      display:block;
+      width:100%; height:100%;
+      object-fit: cover;
+    }
+
+    .bottom {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+    }
+
+    .bottomLeft {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .bottomRight {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  </style>
+  <script id="splash-screen-script">
+    function removeSplashFromWeb() {
+      document.getElementById("splash")?.remove();
+      document.getElementById("splash-branding")?.remove();
+      document.body.style.background = "transparent";
+    }
+  </script>
+</head>
+<body>
+  <picture id="splash">
+      <source srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x" media="(prefers-color-scheme: light)">
+      <source srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x" media="(prefers-color-scheme: dark)">
+      <img class="center" aria-hidden="true" src="splash/img/light-1x.png" alt="Road Savior Moving and Towing Services">
+    <!-- 圖片元素，包含 alt 屬性以描述圖片內容，增強 SEO 和可訪問性 -->
+  </picture>
+  
+
+  <!-- 將靜態內容包裝在 div 中，並應用 seo-content 類別以隱藏 -->
+  <div class="seo-content">
+    <h1>Road Savior - Professional Moving and Towing Services</h1>
+    <!-- 主要標題，包含關鍵字以增強 SEO -->
+    <p>Quickly connect with nearby drivers for moving, towing, transportation, and crane services. Efficient matching, saving time and effort!</p>
+    <!-- 簡短描述，提供網站核心資訊並包含關鍵字 -->
+  </div>
+
+
+  <script src="flutter_bootstrap.js" async=""></script>
+
+
+</body></html>
